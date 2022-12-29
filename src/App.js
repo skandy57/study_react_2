@@ -27,6 +27,13 @@ function App() {
             a(copy);
           }
           }}>글수정</button>
+          <button onClick={()=>{
+            let copy=[...글제목];
+            let sort=copy.sort();
+            a(sort);
+          }
+          
+          }>가나다순정렬</button>
       <div className='list'>
         <h4>{글제목[0]}<span onClick={()=>{c(따봉+1)}}>👍</span> {따봉} </h4>
         <p>2월 17일 발행</p>
