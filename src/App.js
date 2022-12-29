@@ -17,8 +17,18 @@ function App() {
       <div className='black-nav'>
         <h4>ReactBlog</h4>
         </div>
+        <button onClick={()=>{
+          let copy=[...글제목];
+          if (copy[0]==('여자 코트 추천')) {
+            copy[0]='남자 코트 추천';
+            a(copy);
+          }else{
+            copy[0]='여자 코트 추천';
+            a(copy);
+          }
+          }}>글수정</button>
       <div className='list'>
-        <h4 onClick={()=>{a(글제목=['여자 코트 추천','강남 우동맛집','파이썬독학'])}}>{글제목[0]}<span onClick={()=>{c(따봉+1)}}>👍</span> {따봉} </h4>
+        <h4>{글제목[0]}<span onClick={()=>{c(따봉+1)}}>👍</span> {따봉} </h4>
         <p>2월 17일 발행</p>
       </div>
       <div className='list'>
